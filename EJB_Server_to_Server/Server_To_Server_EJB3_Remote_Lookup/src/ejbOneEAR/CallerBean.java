@@ -15,10 +15,13 @@ public class CallerBean implements CallerRemote
                    try {
                          Hashtable<String,String> props = new Hashtable<String,String>();
                          props.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+                         
+                         /******* FOLLOWING  CODE IS NOT NEEDED  ********/
                          //props.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
-                         props.put(Context.PROVIDER_URL, "remote://localhost:4647"); 
-                         props.put(Context.SECURITY_PRINCIPAL, "ejbUserOne");
-                         props.put(Context.SECURITY_CREDENTIALS, "ejbPasswordOne");
+                         //props.put(Context.PROVIDER_URL, "remote://localhost:4647"); 
+                         //props.put(Context.SECURITY_PRINCIPAL, "ejbUserOne");
+                         //props.put(Context.SECURITY_CREDENTIALS, "ejbPasswordOne");
+                         
                          Context context = new javax.naming.InitialContext(props);
                          String jndiName="ejb:" + "ejbTwoEAR/remoteEjbTwo/TestBean!ejb.two.TestRemote";
                          TestRemote remote = (TestRemote) context.lookup(jndiName);
