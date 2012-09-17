@@ -37,8 +37,8 @@
            <!-- Make sure to place the "log4j-1.2.16.jar" file inside ${WAR_NAME}/WEB-INF/lib  directory--> 
            <copy file="${src.dir}/log4j-1.2.16.jar" todir="${tmp.dir}/WEB-INF/lib"/>
 
-           <!-- Using this file we are going to satisfy the log4j dependency without directly placing the log4j.jar inside "WEB-INF/lib"-->
-           <copy file="${src.dir}/jboss-deployment-structure.xml" todir="${tmp.dir}/META-INF"/> 
+           <!-- Using this file we are going to satisfy the log4j dependency without directly placing the log4j.jar inside "WEB-INF/lib"
+           <copy file="${src.dir}/jboss-deployment-structure.xml" todir="${tmp.dir}/WEB-INF"/> -->
 
            <jar jarfile="${tmp.dir}/${war.name}" basedir="${tmp.dir}" compress="true"/> 
 

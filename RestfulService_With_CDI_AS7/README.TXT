@@ -10,3 +10,6 @@ Point-4). How to write a Pure RestEasy Standalone Client to access the RestEasy 
 
 
 http://middlewaremagic.com/jboss/?p=1834
+
+
+
