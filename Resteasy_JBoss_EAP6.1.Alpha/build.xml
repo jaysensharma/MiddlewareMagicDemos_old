@@ -23,7 +23,8 @@
         <target name="build" depends="init">
            <mkdir dir="${tmp.dir}/WEB-INF/classes"/>
            <javac srcdir="${src.dir}" destdir="${tmp.dir}/WEB-INF/classes"  includes="Profit*.java" classpathref="jboss.classpath" />
-           <copy file="${src.dir}/web.xml" tofile="${tmp.dir}/web.xml"/>
+           <copy file="${src.dir}/web.xml" tofile="${tmp.dir}/WEB-INF/web.xml"/>
+           <copy file="${src.dir}/ProfitMock.java" tofile="${tmp.dir}/WEB-INF/classes/ProfitMock.java"/>
            <jar jarfile="${tmp.dir}/${war.name}" basedir="${tmp.dir}" compress="true" />
            <copy file="${tmp.dir}/${war.name}" tofile="${output.dir}/${war.name}"/>
 
