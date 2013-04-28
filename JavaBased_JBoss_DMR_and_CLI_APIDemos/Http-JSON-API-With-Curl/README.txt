@@ -1,3 +1,12 @@
+Refer to following link to get more information on this:
+
+http://middlewaremagic.com/jboss/?p=2488
+AND
+http://middlewaremagic.com/jboss/?p=2476
+
+
+
+
 Run the following curl commands to send POST Data to your JBoss AS 7.1.2 or above to perform various configuration & monitoring operations:
 
 Wget:
